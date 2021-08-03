@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: #753422;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+header {
+  display: inline;
+}
+h1,
+h2 {
+  font-family: "Comfortaa", sans-serif;
+}
+.title {
+  background-color: #b05b3b;
+  padding: 5px;
+  color: #ffebc9;
+}
+.title h1 {
+  margin-left: 20px;
+}
+.navbar {
+  text-align: end;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffebc9;
+}
+nav a:hover {
+  font-weight: bold;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+}
+main {
+  overflow: auto;
+  padding: 10px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  line-height: 1.8;
+  text-indent: 2em;
+}
+#content {
+  float: right;
+  width: 75%;
+}
+h2 {
+  color: #edcfa9;
+}
+.article-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+.articlehead {
+  background-color: #d57149;
+  padding: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px 0 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 30px 30px;
+  padding: 20px;
+  margin-top: 0px;
+}
+.flex-img {
+  width: 130px;
+  height: auto;
+}
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+}
+.icon {
+  width: 50px;
+  height: auto;
+}
+aside {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-right: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap:wrap; */
+  justify-content: flex-start;
+}
+.flex-container-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-item {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #ffebc9;
+}
+.card-portrait {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 0px;
+  background-color: #d57149;
+}
+.card-portrait:hover,
+.icon:hover {
+  transform: scale(1.1);
+}
+footer {
+  padding: 20px;
+  color: #ffebc9;
+  background-color: #b05b3b;
+  text-align: center;
+  font-weight: bold;
+}
+footer a {
+  text-decoration: none;
+  color: #ffebc9;
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .flex-container-profile {
+    width: 100%;
+    margin: auto;
+  }
+  .navbar {
+    text-align: center;
+  }
+  .card-portrait {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3f2115;
+  }
+  .flex-container {
+    overflow: scroll;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #b05b3b;
+  color: #ffebc9;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #753422;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropList-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropList-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropList-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
